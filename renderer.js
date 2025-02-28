@@ -2,7 +2,7 @@
 
   window.addEventListener("DOMContentLoaded", () => {
     monaco.editor.create(document.getElementById("editor"), {
-      value: "// Monacoisworking!",
+      value: "Monacoisworking!",
       language: "javascript",
       theme: "vs-dark",
     });
