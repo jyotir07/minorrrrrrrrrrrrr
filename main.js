@@ -12,6 +12,7 @@ app.whenReady().then(() => {
     width: 800,
     height: 600,
     webPreferences: {
+      preload: "C:\\Users\\hp\\Desktop\\mycode\\preload.js",
       preload: path.join(__dirname, "preload.js"),
       contextIsolation: true, 
       nodeIntegration: false,    
