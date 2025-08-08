@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<!-- <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline' 'unsafe-eval';"> -->
-  <meta charset="UTF-8">
-  <title>Code Editor</title>
-  <style>
-    body { margin: 0; }
-    #editor { width: 100vw; height: 100vh; }
-  </style>
-</head>
-<body>
-<div id="editor"></div>
-<!-- <script src="renderer.js" type="module"></script> -->
-<!-- <script src="./dist/bundle.js"></script> -->
-<script src="./dist/bundle.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Code Editor</title>
+    <style>
+      body {
+        margin: 0;
+        display: flex;
+        font-family: sans-serif;
+      }
+      #file-explorer {
+        width: 200px;
+        height: 100vh;
+        background-color: #f0f0f0;
+        border-right: 1px solid #ccc;
+        padding: 10px;
+        overflow-y: auto;
+      }
+      #editor-container {
+        flex-grow: 1;
+        height: 100vh;
+      }
+      #editor {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="file-explorer"></div>
+    <div id="editor-container">
+      <div id="editor"></div>
+    </div>
+    <script src="./dist/bundle.js"></script>
+  </body>
 </html>
